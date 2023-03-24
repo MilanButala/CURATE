@@ -1,0 +1,991 @@
+@charset "utf-8";
+
+/* CSS Document */
+/* ! GENERAL START */
+/**
+This section is use for reset CSS.
+*/
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    font-family: 'Graphik', sans-serif;
+    font-size: 16px;
+    line-height: 1.5454;
+    font-weight: 400;
+    color: #595959;
+    background: #fff;
+}
+
+a {
+    color: #4DC4FF;
+    text-decoration: none;
+    transition: color 0.3s ease 0s;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+:focus {
+    outline: 0;
+}
+
+a[href^="mailto:"] {
+    color: #000000;
+}
+
+a[href^="mailto:"]:hover,
+a[href^="mailto:"]:focus {
+    text-decoration: underline;
+}
+
+a[href^="tel:"] {
+    cursor: text;
+    color: #000000;
+}
+
+p {
+    margin-bottom: 22px;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+b,
+strong {
+    font-weight: 600;
+}
+
+img {
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+    border: none;
+}
+
+svg {
+    max-width: 100%;
+    transition: fill 0.3s ease 0s;
+}
+
+svg .oval,
+svg .icon {
+    transition: fill 0.3s ease 0s, stroke 0.3s ease 0s;
+}
+
+iframe {
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    border: 0;
+}
+
+
+/* General end */
+
+
+/* ! HEADINGS START */
+/* This section is use for all heading tag default CSS. */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 10px;
+    font-weight: 500;
+    color: #000;
+    letter-spacing: -0.4px;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 1.0694;
+}
+
+h3 {
+    font-size: 32px;
+    line-height: 1.1;
+}
+
+h4 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+h5 {
+    font-size: 20px;
+    line-height: 1.5416;
+}
+
+h6 {
+    font-size: 16px;
+    line-height: 1.5454;
+}
+
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child,
+h6:last-child {
+    margin-bottom: 0;
+}
+
+h2 span {
+    color: #45B0E5;
+}
+
+/* Form  control */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    border-radius: 11px;
+    border-color: #D1D5DB;
+    color: #000000;
+    outline: none;
+    box-shadow: none;
+    background-color: #fff;
+    outline: none;
+    box-shadow: none;
+    font-size: 16px;
+    min-height: 56px;
+    padding: 15px;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    background-color: #fff;
+    border-color: #4DC4FF;
+}
+
+select.form-control {
+    appearance: none;
+    background-position: center right 20px;
+    background-image: url('../images/icons/down-arrow.svg');
+    background-size: 18px;
+    background-repeat: no-repeat;
+    line-height: 24px;
+    padding-right: 50px;
+}
+
+textarea,
+textarea.form-control {
+    width: 100% !important;
+    min-height: 189px;
+    overflow-y: auto;
+    resize: none;
+}
+
+.required {
+    color: #f44336;
+}
+
+/* ! PLACEHOLDER CSS START */
+/**
+This section is used for all form element placeholder.
+*/
+
+::-webkit-input-placeholder {
+    color: #A9A9A9;
+    opacity: 1;
+}
+
+:-moz-placeholder {
+    color: #A9A9A9;
+    opacity: 1;
+}
+
+::-moz-placeholder {
+    color: #A9A9A9;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: #A9A9A9;
+    opacity: 1;
+}
+
+::placeholder {
+    color: #A9A9A9;
+}
+
+/* placeholder css end */
+
+/* Buttons css start */
+.btn {
+    border-radius: 9px;
+    outline: none;
+    box-shadow: none;
+    border-width: 1px;
+    border-style: solid;
+    transition: border 0.3s ease, background 0.3s ease, color 0.3s ease;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: none;
+    outline: none;
+    padding: 10px 30px;
+}
+
+.btn:focus-visible {
+    box-shadow: none;
+}
+
+.btn.btn-lg {
+    font-size: 20px;
+    padding: 12px 30px;
+}
+
+.btn-primary {
+    background-color: #4DC4FF;
+    border-color: #4DC4FF;
+    box-shadow: 0px 4px 92px rgba(0, 0, 0, 0.12);
+}
+
+.btn-primary:hover,
+.btn-primary:focus-visible,
+.btn-primary:active {
+    background-color: #00A3F3 !important;
+    border-color: #00A3F3 !important;
+}
+
+.btn-outline-dark {
+    border-color: #000;
+    color: #000;
+    box-shadow: 0px 4px 92px rgba(0, 0, 0, 0.12);
+}
+
+.btn-outline-dark:hover,
+.btn-outline-dark:focus-visible {
+    border-color: #000;
+    background-color: #000;
+}
+
+.learn-more-link {
+    color: #000;
+    position: relative;
+    z-index: 0;
+}
+
+.learn-more-link::before {
+    background-image: url(../images/learn-moreborder.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    content: "";
+    bottom: -4px;
+    width: 100%;
+    height: 7px;
+}
+
+.learn-more-link:hover,
+.learn-more-link:focus-visible {
+    color: #4DC4FF;
+}
+
+/* Buttons css end */
+
+
+/***************************************************************************************
+* COMMON CSS STARTS
+***************************************************************************************/
+
+.wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.main {
+    display: block;
+}
+
+.small-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.icon {
+    display: inline-block;
+    margin: 0 auto;
+    line-height: 1;
+}
+
+.section {
+    margin: 30px 0;
+}
+
+.text-dark {
+    color: #000;
+}
+
+.section-top-area {
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+
+.section-top-area.section-top-area-small {
+    max-width: 697px;
+}
+
+.section-top-area:last-child {
+    margin-bottom: 0;
+}
+
+.mb-n4 {
+    margin-bottom: -1.5rem !important;
+}
+
+ul.list-style-check {
+    list-style: none;
+}
+
+ul.list-style-check li {
+    position: relative;
+    padding-left: 25px;
+}
+
+ul.list-style-check li::before {
+    content: "\f058";
+    font-family: "Font Awesome 5 Free";
+    display: inline-block;
+    font-weight: 400;
+    position: absolute;
+    font-size: 16px;
+    line-height: 1;
+    left: 0;
+    top: 5px;
+}
+
+/* ! Header Starts */
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    width: 100%;
+    padding: 18px 0;
+}
+
+.logo {
+    max-width: 80px;
+}
+
+.logo a {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.nav-menu ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.nav-menu>ul>li {
+    margin-right: 15px;
+}
+
+.nav-menu>ul>li:last-child {
+    margin-right: 0;
+}
+
+.nav-menu>ul>li a {
+    color: #000;
+    font-size: 16px;
+}
+
+.nav-menu>ul>li a:hover,
+.nav-menu>ul>li a:focus-within,
+.nav-menu>ul>li a.active,
+.nav-menu>ul>li a:active {
+    color: #4DC4FF;
+}
+
+.nav-menu>ul>li a.btn-outline-dark {
+    padding: 10px 30px;
+}
+
+.nav-menu>ul>li a.btn-outline-dark:hover,
+.nav-menu>ul>li a.btn-outline-dark:focus-within,
+.nav-menu>ul>li a.btn-outline-dark.active .nav-menu>ul>li a.btn-outline-dark:active {
+    background-color: #000;
+    color: #fff;
+}
+
+/* ! Header End */
+
+/* ! Footer Starts */
+.footer {
+    background: linear-gradient(91.1deg, #DCECF9 5.87%, #DCEFFC 40.91%);
+    padding: 38px 0;
+    color: #050818;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.copy-right-text {
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 1.4;
+}
+
+/* ! Footer End */
+
+/***************************************************************************************
+* HOME CSS STARTS
+***************************************************************************************/
+/* ! Contect form Section Starts */
+.office-address-info {
+    margin-top: 47px;
+}
+
+.office-info-box {
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 0;
+    line-height: 1.1818;
+}
+
+.office-info-box:last-child {
+    margin-bottom: 0;
+}
+
+.office-info-box .icon {
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+
+.office-info-content {
+    font-size: 22px;
+    color: #000000;
+    padding-left: 39px;
+}
+
+.get-in-touch-section {
+    position: relative;
+    z-index: 0;
+}
+
+.star-shape {
+    position: absolute;
+    right: -200px;
+    bottom: -50px;
+    width: 250px;
+    z-index: -1;
+}
+
+/* ! Contect form Section End */
+/* ! Easy to use interface Section start */
+.interface-container {
+    background: linear-gradient(360deg, #B7E5FB 0%, rgba(183, 229, 251, 0.27) 100%);
+    border-radius: 25px;
+    padding-top: 30px;
+}
+
+/* ! Easy to use interface Section end */
+/* ! The Process Section start */
+.card {
+    background-color: #fff;
+    border: 0;
+    box-shadow: 0px 4px 122px rgba(0, 0, 0, 0.08);
+    border-radius: 13px;
+}
+
+.card-body {
+    padding: 30px;
+}
+
+.process-card-icon {
+    margin-bottom: 25px;
+}
+
+.the-process-section {
+    position: relative;
+    z-index: 0;
+}
+
+.the-process-shape {
+    width: 100%;
+    position: absolute;
+    top: 60%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 0;
+}
+
+.the-process-shape img {
+    width: 100%;
+}
+
+/* ! The Process Section end */
+
+/* ! Subscription plan section start */
+.subscription-plan-section {
+    position: relative;
+    z-index: 0;
+}
+
+.subscription-plan-shape {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    width: 70%;
+}
+
+.subscription-plan-shape img {
+    width: 100%;
+}
+
+.price-box {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.pricing-name,
+.plan-price,
+.price-action,
+.price-content {
+    margin-bottom: 22px;
+    color: #101010;
+}
+
+.price-features {
+    color: #101010;
+}
+
+.pricing-name h6 {
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+}
+
+.pricing-name h6 .price-content h6,
+.plan-price h4 {
+    color: #101010;
+}
+
+.price-features ul {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.price-features ul li {
+    margin-bottom: 17px;
+}
+
+.price-features ul li:last-child {
+    margin-bottom: 0;
+}
+
+.price-content,
+.price-features ul li {
+    font-size: 14px;
+    line-height: 1.444;
+}
+
+.price-features ul.list-style-check li::before {
+    top: 3px;
+    font-size: 14px;
+}
+
+/* ! Subscription plan section end */
+
+/* ! User review section start */
+.user-review-section {
+    position: relative;
+    background: linear-gradient(91.1deg, #FFFFFF 5.87%, #DCEFFC 40.91%);
+    border-radius: 15px;
+    z-index: 0;
+    padding: 50px 0;
+    overflow: hidden;
+}
+
+.user-review-section-shape {
+    position: absolute;
+    left: 0;
+    top: 30px;
+    z-index: -1;
+    width: 100%;
+}
+
+.user-review-section-shape img {
+    width: 100%;
+}
+
+/* ! User review section end */
+
+.fifty-col-text {
+    max-width: 640px;
+}
+
+.fifty-col-text h2 {
+    margin-bottom: 15px;
+}
+
+.cu-rate-section {
+    background: #4DC4FF;
+    color: #fff;
+    padding: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.cu-rate-section p {
+    margin-bottom: 10px;
+}
+
+.cu-rate-shape {
+    position: absolute;
+    width: 70%;
+    right: 0;
+    top: 50%;
+    z-index: 1;
+    opacity: 0.4;
+    text-align: right;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.home-banner {
+    background: linear-gradient(252.4deg, #DEE4F2 2.69%, #F4FAFE 96.53%);
+    min-height: 100vh;
+    padding: 120px 0 0;
+    position: relative;
+    z-index: 0;
+}
+
+.banner-image-block {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.banner-content h1 {
+    margin-bottom: 30px;
+}
+
+.banner-content h1 span {
+    display: inline-block;
+    position: relative;
+    z-index: 0;
+}
+
+.banner-content h1 span:after {
+    content: "";
+    position: absolute;
+    background-color: #4DC4FF;
+    height: 8px;
+    width: 100%;
+    left: 0;
+    bottom: 5px;
+    z-index: -1;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .cu-rate-shape {
+        width: 50%;
+    }
+
+    .nav-menu>ul>li {
+        margin-right: 30px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .section {
+        margin: 50px 0;
+    }
+
+    /* ! Easy to use interface Section start */
+    .interface-container {
+        padding-top: 50px;
+    }
+
+    /* ! Easy to use interface Section end */
+    .cu-rate-section {
+        padding: 50px 0;
+    }
+
+    .cu-rate-shape {
+        width: 40%;
+    }
+
+    .banner-image-block {
+        max-width: inherit;
+        position: absolute;
+        bottom: -8%;
+        max-width: 50%;
+        right: 0;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .banner-image-block {
+        bottom: -10%;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+    /* ! HEADINGS START */
+    /* This section is use for all heading tag default CSS. */
+    h1 {
+        font-size: 65px;
+    }
+
+    h2 {
+        font-size: 52px;
+    }
+
+    h3 {
+        font-size: 38px;
+    }
+
+    /* Headings end */
+
+    .section {
+        margin: 100px 0;
+    }
+
+    .logo {
+        max-width: 100px;
+    }
+
+    .nav-menu>ul>li {
+        margin-right: 40px;
+    }
+
+    /***************************************************************************************
+    * HOME CSS STARTS
+    ***************************************************************************************/
+    /* ! Contect form Section Starts */
+    .star-shape {
+        right: -250px;
+        bottom: -110px;
+        width: 310px;
+    }
+
+    /* ! Contect form Section End */
+    /* ! Easy to use interface Section start */
+    .interface-container {
+        padding-top: 80px;
+    }
+
+    /* ! Easy to use interface Section end */
+    /* ! User review section start */
+    .user-review-section {
+        padding: 80px 0;
+    }
+
+    /* ! User review section end */
+    .cu-rate-section {
+        padding: 129px 0;
+    }
+
+    .banner-image-block {
+        max-width: 40%;
+    }
+    .banner-content h1 span:after {
+        height: 10px; 
+        bottom: 8px;
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    body {
+        font-size: 22px;
+    }
+
+    /* ! HEADINGS START */
+    /* This section is use for all heading tag default CSS. */
+    h1 {
+        font-size: 100px;
+    }
+
+    h2 {
+        font-size: 72px;
+    }
+
+    h3 {
+        font-size: 48px;
+    }
+
+    h4 {
+        font-size: 36px;
+    }
+
+    h5 {
+        font-size: 24px;
+    }
+
+    h6 {
+        font-size: 22px;
+    }
+
+    /* Headings end */
+    .form-group {
+        margin-bottom: 45px;
+    }
+
+    .form-control {
+        min-height: 79px;
+        font-size: 18px;
+        padding: 25px 22px;
+    }
+
+    select.form-control {
+        line-height: 27px;
+    }
+
+    textarea,
+    textarea.form-control {
+        min-height: 189px;
+    }
+
+    /* Buttons css end */
+    .btn {
+        font-size: 18px;
+        padding: 15.5px 40px;
+    }
+
+    .btn.btn-lg {
+        font-size: 24px;
+        padding: 21px 47px;
+    }
+
+    /* Buttons css start */
+
+    .section {
+        margin: 160px 0;
+    }
+
+    .section-top-area {
+        max-width: 1107px;
+        margin-bottom: 55px;
+    }
+
+    .small-container {
+        max-width: 1107px;
+    }
+
+    .nav-menu>ul>li {
+        margin-right: 60px;
+    }
+
+    .logo {
+        max-width: 110px;
+    }
+
+    .nav-menu>ul>li a {
+        font-size: 24px;
+    }
+
+    .nav-menu>ul>li a.btn-outline-dark {
+        padding: 14px 37px;
+    }
+
+
+
+    /***************************************************************************************
+    * HOME CSS STARTS
+    ***************************************************************************************/
+    /* ! Contect form Section Starts */
+    .office-address-info {
+        margin-top: 67px;
+    }
+
+    .office-info-content {
+        font-size: 28px;
+    }
+
+    .office-info-box .icon {
+        top: 3px;
+    }
+
+    .office-info-box {
+        margin-bottom: 50px;
+    }
+
+    .star-shape {
+        width: 475px;
+        right: -385px;
+        bottom: -190px;
+    }
+
+    /* ! Contect form Section end */
+    /* ! Easy to use interface Section start */
+    .interface-container {
+        padding-top: 100px;
+    }
+
+    /* ! Easy to use interface Section end */
+    /* ! The Process Section start */
+    .card-body {
+        padding: 45px;
+    }
+
+    .process-card .card-body {
+        padding: 47px 37px;
+    }
+
+    /* ! The Process Section end */
+    .price-content,
+    .price-features ul li {
+        font-size: 18px;
+        line-height: 1.444;
+    }
+
+    .price-features ul.list-style-check li::before {
+        top: 5px;
+        font-size: 16px;
+    }
+
+    /* ! User review section start */
+    .user-review-section {
+        padding: 152px 0;
+    }
+
+    /* ! User review section end */
+    .fifty-col-text h2 {
+        margin-bottom: 30px;
+    }
+
+    .home-banner {
+        padding: 150px 0 0;
+    }
+    .banner-content h1 span:after {       
+        bottom: 13px;
+    }
+}
+
+/* XXX-Large devices (larger desktops, 1600px and up) */
+@media (min-width: 1600px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1560px;
+    }
+}

@@ -20,7 +20,7 @@ var CURATE = {
         document.createElement("main");
         document.createElement("figure");
         document.createElement("footer");
-       
+
         CURATE.loadResize();
         jQuery(window).resize(function () {
             CURATE.loadResize();
@@ -39,11 +39,42 @@ var CURATE = {
     },
 
     myFunction: function () {
-    
+        if (jQuery('.feedback-sider-1').length) {
+            jQuery('.feedback-sider-1').slick({
+                autoplay: true,
+                autoplaySpeed: 3000,
+                dots: false,
+                infinite: true,
+                slidesToShow: 1,
+                centerMode: true,
+                variableWidth: true,
+                draggable: false,
+            });
+        }
+        if (jQuery('.feedback-sider-2').length) {
+            jQuery('.feedback-sider-2').slick({
+                autoplay: true,
+                autoplaySpeed: 3500,
+                dots: false,
+                infinite: true,
+                slidesToShow: 1,
+                centerMode: false,
+                variableWidth: true,
+                draggable: false,
+                responsive: [
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            centerMode: true,
+                        },
+                    },
+                ]
+            });
+        }
     },
 };
 
 // when the page is ready, initialize everything
-jQuery(document).ready(function() {
-    CURATE.init();  
+jQuery(document).ready(function () {
+    CURATE.init();
 });
